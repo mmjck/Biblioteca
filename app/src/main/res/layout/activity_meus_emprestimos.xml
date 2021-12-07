@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tap.biblioteca.MeusEmprestimos">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listaLivrosEmprestados"
+        android:layout_width="349dp"
+        android:layout_height="405dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/novoEmprestimo"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <Button
+        android:id="@+id/novoEmprestimo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Novo emprestimo"
+        app:backgroundTint="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.895"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pedidosReserva" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="154dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="24dp"
+        android:text="Meus Emprestimos"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/pedidosReserva"
+        android:layout_width="178dp"
+        android:layout_height="55dp"
+        android:text="Pedidos de Emprestimos"
+        android:textSize="12sp"
+        app:backgroundTint="#00BCD4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+</androidx.constraintlayout.widget.ConstraintLayout>
